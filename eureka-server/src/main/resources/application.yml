@@ -1,0 +1,21 @@
+server:
+  port: 28081
+
+spring:
+  application:
+    name: micro-service-eureka
+  security:
+    user:
+      name: nick
+      password: 123456
+  profiles:
+    active: peer1
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+#    service-url:
+#      defaultZone: http://nick:123456@localhost:28081/eureka/
+  server:
+    enable-self-preservation: false

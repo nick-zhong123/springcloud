@@ -1,0 +1,11 @@
+server:
+  port: 28082
+
+eureka:
+  instance:
+    hostname: peer2.eureka.com
+  client:
+    serviceUrl:
+      defaultZone: http://nick:123456@peer1.eureka.com:28081/eureka/
+    register-with-eureka: true
+    fetch-registry: true
