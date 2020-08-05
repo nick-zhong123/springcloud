@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 /**
- * @author weizhong
+ * @author nick
  * @date 2020/5/8 3:39 PM
  * @package com.nick.micro.eureka.server.config
  * @description

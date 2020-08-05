@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author weizhong
+ * @author nick
  * @date 2020/5/8 2:50 PM
  * @package com.nick.micro.eureka.client.controller
  * @description

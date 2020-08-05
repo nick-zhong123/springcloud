@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: prod
+
+
+# tomcat
+server:
+  tomcat:
+    accesslog:
+      buffered: true
+      directory: /search/log/
+      file-date-format: .yyyy-MM-dd # Date format to place in log file name.
+      pattern: common
+      prefix: tomcat_access_log
+      rename-on-rotate: false
+      request-attributes-enabled: false
+      suffix: .log
+
+

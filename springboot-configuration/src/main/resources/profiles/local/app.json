@@ -1,0 +1,7 @@
+{
+  "app": {
+    "name": "throwable prod",
+    "age": 25,
+    "env": "prod"
+  }
+}

@@ -9,7 +9,7 @@ spring:
       name: nick
       password: 123456
   profiles:
-    active: peer1
+    active: "@env@"
 
 eureka:
   client:
@@ -19,3 +19,13 @@ eureka:
 #      defaultZone: http://nick:123456@localhost:28081/eureka/
   server:
     enable-self-preservation: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+#        include: "*"
+
+
+

@@ -1,0 +1,3 @@
+mvn install:install-file -Dfile=/Users/weizhong/nick/code/java/microservice/springboot-starter-demo/target/springboot-starter-demo-1.0.jar -DgroupId=com.nick.springboot.starter -DartifactId=springboot-starter-demo -Dversion=1.0 -Dpackaging=jar -DpomFile=/Users/weizhong/nick/code/java/microservice/springboot-starter-demo/pom.xml
+
+解析：mvn install:install-file -Dfile=要上传的本地包的路径 -DgroupId=包名 -DartifactId=项目名 -Dversion=版本号 -Dpackaging=jar（这个是不变的）可以看看和我上图pom配置的对应
