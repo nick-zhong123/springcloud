@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: apigateway
+  cloud:
+    gateway:
+      # 此处配置表示开启自动映射Eureka下发的路由
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+      - id: eureka-client-hello-demo
+        uri: lb://eureka-client-hello-demo
+        predicates:
+          - Path=/user/**
+        filters:
+          - StripPrefix=1
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://nick:123456@peer1.eureka.com:28081/eureka/,http://nick:123456@peer2.eureka.com:28082/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}

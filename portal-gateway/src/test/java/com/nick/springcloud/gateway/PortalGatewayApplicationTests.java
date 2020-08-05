@@ -1,4 +1,4 @@
-package com.nick.springcloud.gateway.portal;
+package com.nick.springcloud.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
