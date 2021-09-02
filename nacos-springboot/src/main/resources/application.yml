@@ -1,0 +1,6 @@
+server:
+  port: 28084
+#nacos:
+#  config:
+#    server-addr: 172.16.5.2:8848
+

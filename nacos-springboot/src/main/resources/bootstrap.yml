@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springboot_nacos
+  # 配置 Nacos 注册中心
+  cloud:
+    nacos:
+      discovery:
+        enabled: true # 如果不想使用 Nacos 进行服务注册和发现，设置为 false 即可
+        server-addr: 172.16.5.2:8848 # Nacos 服务器地址
