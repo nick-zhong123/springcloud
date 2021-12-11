@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-client-hello-demo
+  security:
+    user:
+      name: nick
+      password: 123456

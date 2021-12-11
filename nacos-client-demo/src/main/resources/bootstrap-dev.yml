@@ -1,0 +1,21 @@
+spring:
+  # 数据源配置
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        # 服务注册地址
+        server-addr: 192.168.31.150:8848
+        #命名空间
+        namespace: 58a56ca1-4e35-4357-8b47-57a2f9c41e4d
+        #分组
+        #group: xxx
+      config:
+        # 配置中心地址
+        server-addr: 192.168.31.150:8848
+        #配置文件格式
+        file-extension: yml
+        #命名空间
+        namespace: 58a56ca1-4e35-4357-8b47-57a2f9c41e4d
+        #分组
+        #group: xxx

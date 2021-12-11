@@ -11,10 +11,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaClientDemoApplication {
+public class NacosClientDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientDemoApplication.class, args);
+        SpringApplication.run(NacosClientDemoApplication.class, args);
     }
 
 }
