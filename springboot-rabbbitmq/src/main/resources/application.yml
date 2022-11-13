@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: test
+
+  rabbitmq:
+    host: 192.168.3.27
+    virtual-host: vhost01
+    port: 5672
+    username: nick
+    password: 123456
+
+# tomcat
+server:
+  tomcat:
+    accesslog:
+      buffered: true
+      directory: /springboot-rabbbitmq/log/
+      file-date-format: .yyyy-MM-dd # Date format to place in log file name.
+      pattern: common
+      prefix: tomcat_access_log
+      rename-on-rotate: false
+      request-attributes-enabled: false
+      suffix: .log
+
+
+
